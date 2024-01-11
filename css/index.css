@@ -472,4 +472,16 @@ header .loginBtn:hover {
   #about {
     padding: 30px;
   }
+  #about div img {
+    width: 100%;
+  }
+  #about div p {
+    font-size: 20px;
+  }
+  #about div {
+    flex-direction: column;
+  }
+  #about .box2 div {
+    flex-direction: column-reverse !important;
+  }
 }
