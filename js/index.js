@@ -54,7 +54,7 @@ class10Data.forEach((data, index) => {
   if (window.location.href.includes("class10")) {
     class10Box.innerHTML += `
   <div class="videoConatiner">
-  <h2>${data.name} Videos</h2>
+  <h2>${data.name}</h2>
   <div class="line"></div>
   <div class="card-container" id="c-${index}">
   </div>
@@ -120,7 +120,7 @@ class12Data.forEach((data, index) => {
   if (window.location.href.includes("class12"))
     class12Box.innerHTML += `
   <div class="videoConatiner">
-  <h2>${data.name} Videos</h2>
+  <h2>${data.name}</h2>
   <div class="line"></div>
   <div class="card-container" id="c-${index}">
   </div>

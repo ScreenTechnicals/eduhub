@@ -25,13 +25,17 @@ body {
 }
 header {
   padding: 30px 100px;
-  position: relative;
+  position: sticky;
+  top: 0;
+  left: 0;
   z-index: 9999;
   transition: all 0.5s ease;
+  background: #000;
 }
 header > .brand_box a span {
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 header > .brand_box a span:nth-child(1) {
   font-size: 30px;
@@ -421,6 +425,176 @@ header .loginBtn:hover {
   font-size: 30px;
   font-weight: 200;
 }
+
+.courses {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 80px;
+  background: var(--dark-gray-color);
+  padding: 30px;
+  border-radius: 10px;
+}
+.courses .courseCard {
+  width: 400px;
+  position: relative;
+  border: 1px solid var(--dark-gray-2-color);
+  overflow: hidden;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.courses .courseCard div img {
+  width: 100%;
+  height: 240px !important;
+  object-fit: cover !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+.courses .courseCard div:nth-child(2) {
+  padding: 20px;
+}
+.courses .courseCard div:nth-child(2) p {
+  padding: 0;
+  margin: 0;
+  color: var(--tertiary-color);
+}
+.courses .courseCard div:nth-child(2) h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.courses .courseCard div:nth-child(2) div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.courses .courseCard div:nth-child(2) div span {
+  font-size: 20px;
+  font-weight: 600;
+}
+.courses .courseCard div:nth-child(2) div {
+  border-top: 1px solid var(--dark-gray-2-color);
+  padding-top: 15px;
+}
+.courses .courseCard div:nth-child(2) div span:nth-child(2) i {
+  color: var(--tertiary-color);
+}
+.courses .courseCard:hover {
+  transform: scale(0.9);
+}
+
+/* pricing */
+.pricing {
+  width: 100%;
+  /* padding: 30px; */
+}
+.pricing h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 35px;
+  text-transform: capitalize;
+  padding: 30px 0;
+}
+.pricing .cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pricing .cards .plan_card {
+  width: 350px;
+  min-height: 520px;
+  background: var(--dark-gray-color);
+  padding: 30px;
+  margin: 20px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+.pricing .cards .plan_card h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.pricing .cards .plan_card hr {
+  border: none;
+  border-top: 1px solid #ecececec;
+}
+.pricing .cards .plan_card h1 {
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 40px 0;
+}
+.pricing .cards .plan_card h1 span {
+  font-size: 14px;
+  color: #cbcbcb;
+  font-weight: normal;
+}
+.pricing .cards .plan_card p {
+  font-size: 13px;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.pricing .cards .plan_card ul li span {
+  color: #00b700;
+  letter-spacing: 10px;
+}
+.pricing .cards .plan_card ul li {
+  font-size: 14px;
+}
+.pricing .cards .plan_card .plan_btn {
+  text-align: center;
+  margin-top: 40px;
+}
+.pricing .cards .plan_card .plan_btn a {
+  padding: 10px 30px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 13px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.pricing_one {
+  color: #00b900;
+}
+.pricing_two {
+  color: #0080ff;
+}
+.pricing_three {
+  color: #ff5900;
+}
+
+.pricing .cards .plan_card .first_plan_btn a {
+  background: rgba(0, 183, 0, 0.374);
+  color: green;
+}
+.pricing .cards .plan_card .first_plan_btn a:hover {
+  background: #00c400;
+  color: var(--secondary-color);
+}
+.pricing .cards .plan_card .second_plan_btn a {
+  background: rgb(0, 128, 255, 0.374);
+  color: rgb(0, 128, 255);
+}
+.pricing .cards .plan_card .second_plan_btn a:hover {
+  color: var(--secondary-color);
+  background: rgb(0, 128, 255);
+}
+.pricing .cards .plan_card .third_plan_btn a {
+  background: rgb(255, 89, 0, 0.374);
+  color: rgb(255, 89, 0);
+}
+
+.pricing .cards .plan_card .third_plan_btn a:hover {
+  color: var(--secondary-color);
+  background: rgb(255, 89, 0);
+}
 /* 750px */
 @media only screen and (max-width: 750px) {
   .menuBox {
@@ -483,5 +657,12 @@ header .loginBtn:hover {
   }
   #about .box2 div {
     flex-direction: column-reverse !important;
+  }
+  .courses .courseCard div img {
+    height: 180px !important;
+  }
+  .courses {
+    padding: 0;
+    background: none;
   }
 }
