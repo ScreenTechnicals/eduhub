@@ -148,17 +148,17 @@ header .loginBtn:hover {
 #home {
   padding: 30px;
 }
-#home .content {
+.content {
   padding: 0 100px;
 }
-#home .content h2 {
+.content h2 {
   font-size: 120px;
   font-weight: 700;
 }
-#home .content h2 span {
+.content h2 span {
   color: var(--tertiary-color);
 }
-#home .content p {
+.content p {
   font-size: 50px;
   position: relative;
   top: 40px;
@@ -524,6 +524,15 @@ header .loginBtn:hover {
 .pricing .cards .plan_card hr {
   border: none;
   border-top: 1px solid #ecececec;
+}
+.pricing .cards .plan_card div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pricing .cards .plan_card div img {
+  width: 150px;
 }
 .pricing .cards .plan_card h1 {
   font-weight: 700;
